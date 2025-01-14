@@ -1,0 +1,33 @@
+// Telegram bot loyihasi uchun aniq MVC arxitekturasi
+
+// Katalog tuzilmasi:
+
+project-folder/
+│
+├── src/
+│   ├── app/
+│   │   ├── bot/
+│   │   │   ├── messages/
+│   │   │   │   ├── admin.js         // Adminlar uchun maxsus buyruqlar
+│   │   │   │   ├── user.js          // Foydalanuvchilar uchun maxsus buyruqlar
+│   │   │   │   ├── tracker.js       // Foydalanuvchilarni kuzatish funksiyasi
+│   │   │   ├── telegram-bot.js      // Botning asosiy sozlamalari va logikasi
+│   │   ├── backend/
+│   │   │   ├── models/
+│   │   │   │   ├── bot.userModel.js     // Ma'lumotlar bazasi sxemasi va foydalanuvchi ma'lumotlarini boshqarish
+│   │   │   │   ├── bot.messageModel.js  // Xabarlar sxemasi va kuzatish
+│   │   │   ├── controllers/
+│   │   │   │   ├── bot.userController.js // Foydalanuvchi boshqaruvi logikasi, asosan Telegram bot bilan integratsiya uchun
+│   │   │   │   ├── bot.messageController.js // Xabarlarni qayta ishlash va ma'lumotlar bazasida saqlash
+│   │   │   ├── database.js          // Ma'lumotlar bazasi ulanishi sozlamalari
+│   │   ├── frontend/
+│   │   │   ├── elements/            // Frontend uchun qayta ishlatiladigan komponentlar
+│   │   │   ├── views/               // Frontend ko'rinishlari (agar kerak bo'lsa, boshqaruv paneli uchun)
+│   │   ├── utils/
+│   │   │   ├── logger.js            // Markazlashtirilgan loglash funksiyasi
+│   │   │   ├── helpers.js           // Yordamchi funksiyalar
+│
+├── .env                             // Muhit o'zgaruvchilari (API kalitlari va boshqalar)
+├── .gitignore                       // Git orqali e'tiborsiz qilinadigan fayllar
+├── index.js                         // Loyihaning asosiy boshlanish nuqtasi
+├── package.json                     // Loyihaning bog'lanishlari va skriptlari

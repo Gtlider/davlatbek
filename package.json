@@ -4,7 +4,8 @@
   "description": "Portfolio - Davlatbek Norqobulov",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,12 @@
     "salom123"
   ],
   "author": "davlatbek",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "fs": "^0.0.1-security",
+    "mongoose": "^8.9.5",
+    "mongose": "^0.0.2-security",
+    "node-telegram-bot-api": "^0.66.0"
+  }
 }
